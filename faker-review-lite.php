@@ -2,30 +2,7 @@
 /**
  * Plugin Name: Faker Review Lite
  * Plugin URI: https://oxyian.com/
- * Description: Generate simple fake reviews for WooCommerce products for t                        <select name="products[]" multiple style="width: 100%; max-width: 400px; height: 200px;" onchange="limitProductSelection(this);">
-                            <?php foreach ($products as $product): ?>
-                                <option value="<?php echo esc_attr($product->get_id()); ?>">
-                                    <?php echo esc_html($product->get_name()); ?>
-                                </option>
-                            <?php endforeach; ?>
-                        </select>
-                        <p class="description">
-                            <?php echo esc_html__('Hold Ctrl/Cmd to select products (maximum 2 products in Lite version)', 'faker-review'); ?>
-                        </p>
-                        <p class="description" style="color: #2271b1;">
-                            <?php echo esc_html__('Want to generate reviews for more products? Upgrade to Premium!', 'faker-review'); ?>
-                        </p>
-                        <script>
-                        function limitProductSelection(select) {
-                            if (select.selectedOptions.length > 2) {
-                                alert('<?php echo esc_js(__('Lite version is limited to 2 products. Upgrade to Premium for unlimited product selection!', 'faker-review')); ?>');
-                                // Keep only the first 2 selected options
-                                for (let i = 2; i < select.options.length; i++) {
-                                    select.options[i].selected = false;
-                                }
-                            }
-                        }
-                        </script>poses (up to 15 reviews per product).
+ * Description: Generate simple fake reviews for WooCommerce products for testing purposes (up to 5 reviews per product, unverified only)
  * Version: 1.1
  * Author: OXYIAN
  * Author URI: https://oxyian.com/
