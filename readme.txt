@@ -1,4 +1,4 @@
-=== Faker Review ===
+=== Faker Review Lite ===
 Contributors: oxyian
 Tags: woocommerce, reviews, testing, fake reviews, development, dummy data, test data, product reviews
 Requires at least: 5.0
@@ -8,24 +8,27 @@ Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Generate realistic fake reviews for WooCommerce products for testing purposes.
+Generate simple fake reviews for WooCommerce products for testing purposes (up to 15 reviews per product).
 
 == Description ==
 
-Faker Review is a powerful developer tool designed to generate realistic fake reviews for WooCommerce products. This plugin streamlines the development and testing process by allowing you to quickly populate your store with customizable, realistic-looking product reviews. Perfect for theme development, testing review functionality, or preparing demo stores.
+Faker Review Lite is a simple tool designed to generate realistic fake reviews for WooCommerce products. Perfect for development and testing environments, this plugin helps developers and store owners quickly add sample reviews to their products.
 
-= Key Features =
-* Generate up to 500 reviews per batch for multiple products
-* Full control over star rating distribution (1-5 stars)
-* Upload custom reviewer names and review content via text files
-* Flexible date range settings for review timestamps
-* Control verified purchase status for each review batch
-* Auto-generate realistic reviewer email addresses
-* Select specific products or generate reviews store-wide
-* Compatible with all WooCommerce product types
-* Bulk review generation with customizable parameters
-* Clean, intuitive interface in WordPress admin
-* No impact on site performance during normal operation
+= Free Features =
+* Generate up to 15 reviews per product
+* Select specific products for reviews
+* Set verified/unverified purchase status
+* Default balanced rating distribution
+* Simple and intuitive interface
+
+= Premium Features =
+* Generate up to 500 reviews per product
+* Custom rating distribution
+* Set date ranges for reviews
+* Select products by category
+* Mixed verified/unverified reviews
+* Custom review text and names upload
+* Advanced review settings
 
 = Perfect For =
 * Development environments

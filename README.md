@@ -1,21 +1,26 @@
-# Faker Review
+# Faker Review Lite
 
 ## Overview
 
-Faker Review is a powerful WordPress plugin designed to generate realistic fake reviews for WooCommerce products. Perfect for development, testing, and demonstration environments, this plugin helps developers and store owners quickly populate their stores with customizable, realistic-looking product reviews.
+Faker Review Lite is a simple WordPress plugin designed to generate realistic fake reviews for WooCommerce products. Perfect for development and testing environments, this plugin helps developers and store owners quickly add sample reviews to their products.
 
-## Key Features
+## Features
 
-- Generate up to 500 reviews per batch for multiple products
-- Full control over star rating distribution (1-5 stars)
-- Upload custom reviewer names and review content
-- Flexible date range settings for review timestamps
-- Control verified purchase status for generated reviews
-- Auto-generate realistic reviewer email addresses
-- Select specific products or generate store-wide reviews
-- Compatible with all WooCommerce product types
-- Bulk review generation with progress tracking
-- Clean, intuitive interface in WordPress admin
+### Free Features
+- Generate up to 15 reviews per product
+- Select specific products for reviews
+- Set verified/unverified purchase status
+- Default balanced rating distribution
+- Simple and intuitive interface
+
+### Premium Features
+- Generate up to 500 reviews per product
+- Custom rating distribution
+- Set date ranges for reviews
+- Select products by category
+- Mixed verified/unverified reviews
+- Custom review text and names upload
+- Advanced review settings
 
 ## Installation
 

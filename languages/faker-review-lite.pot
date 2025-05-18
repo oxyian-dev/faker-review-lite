@@ -1,0 +1,131 @@
+# Copyright (C) 2025 OXYIAN
+# This file is distributed under the same license as the Faker Review Lite plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Faker Review Lite 1.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/faker-review-lite\n"
+"Last-Translator: OXYIAN\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-05-18T10:00:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: faker-review\n"
+
+#. Plugin Name of the plugin
+msgid "Faker Review Lite"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://oxyian.com/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Generate simple fake reviews for WooCommerce products for testing purposes (up to 15 reviews per product)."
+msgstr ""
+
+#. Author of the plugin
+msgid "OXYIAN"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://oxyian.com/"
+msgstr ""
+
+#: faker-review-lite.php:50
+msgid "Faker Review Lite requires WooCommerce to be installed and active."
+msgstr ""
+
+#: faker-review-lite.php:89
+msgid "Generate up to 15 fake reviews for testing purposes."
+msgstr ""
+
+#: faker-review-lite.php:92
+msgid "Need more features? Try our Premium version with:"
+msgstr ""
+
+#: faker-review-lite.php:94
+msgid "Up to 500 reviews per product"
+msgstr ""
+
+#: faker-review-lite.php:95
+msgid "Custom rating distribution"
+msgstr ""
+
+#: faker-review-lite.php:96
+msgid "Date range selection"
+msgstr ""
+
+#: faker-review-lite.php:97
+msgid "Category-based selection"
+msgstr ""
+
+#: faker-review-lite.php:98
+msgid "Advanced settings and more!"
+msgstr ""
+
+#: faker-review-lite.php:100
+msgid "Upgrade to Premium"
+msgstr ""
+
+#: faker-review-lite.php:107
+msgid "Select Products"
+msgstr ""
+
+#: faker-review-lite.php:118
+msgid "Hold Ctrl/Cmd to select multiple products"
+msgstr ""
+
+#: faker-review-lite.php:124
+msgid "Reviews per Product"
+msgstr ""
+
+#: faker-review-lite.php:128
+msgid "Maximum 15 reviews per product in Lite version"
+msgstr ""
+
+#: faker-review-lite.php:133
+msgid "Verified Purchase"
+msgstr ""
+
+#: faker-review-lite.php:137
+msgid "Mix of Verified and Unverified"
+msgstr ""
+
+#: faker-review-lite.php:140
+msgid "All Verified"
+msgstr ""
+
+#: faker-review-lite.php:143
+msgid "All Unverified"
+msgstr ""
+
+#: faker-review-lite.php:151
+msgid "Generate Reviews"
+msgstr ""
+
+#: faker-review-lite.php:158
+msgid "Security check failed"
+msgstr ""
+
+#: faker-review-lite.php:170
+msgid "No products selected. Please select at least one product."
+msgstr ""
+
+#: faker-review-lite.php:182
+msgid "Reviews file not found."
+msgstr ""
+
+#: faker-review-lite.php:192
+msgid "Names file not found."
+msgstr ""
+
+#: faker-review-lite.php:256
+msgid "Successfully generated %d reviews! 🎉"
+msgstr ""
+
+#: faker-review-lite.php:267
+msgid "Generate Reviews"
+msgstr ""
