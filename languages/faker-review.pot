@@ -1,0 +1,85 @@
+# Copyright (C) 2025 OXYIAN
+# This file is distributed under the same license as the Faker Review plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Faker Review 1.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/faker-review\n"
+"Last-Translator: OXYIAN\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-05-18T10:00:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: faker-review\n"
+
+#. Plugin Name of the plugin
+#: faker-review.php:16
+msgid "Faker Review"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: faker-review.php:17
+msgid "https://oxyian.com/"
+msgstr ""
+
+#. Description of the plugin
+#: faker-review.php:18
+msgid "Generate fake reviews for WooCommerce products for testing purposes."
+msgstr ""
+
+#. Author of the plugin
+#: faker-review.php:20
+msgid "OXYIAN"
+msgstr ""
+
+#. Author URI of the plugin
+#: faker-review.php:21
+msgid "https://oxyian.com/"
+msgstr ""
+
+#: faker-review.php:35
+msgid "Faker Review requires WooCommerce to be installed and active."
+msgstr ""
+
+#: faker-review.php:69
+#: faker-review.php:70
+msgid "Faker Review"
+msgstr ""
+
+#: faker-review.php:88
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: faker-review.php:481
+msgid "Rating distributions should add up to 100%% (current total: %d%%)."
+msgstr ""
+
+#: faker-review.php:510
+msgid "No products selected or available. Please select at least one product."
+msgstr ""
+
+#: faker-review.php:519
+msgid "No review text available. Please upload a file or make sure the default file exists."
+msgstr ""
+
+#: faker-review.php:528
+msgid "No names available. Please upload a file or make sure the default file exists."
+msgstr ""
+
+#: faker-review.php:602
+msgid "✨ Successfully generated %d reviews! 🎉"
+msgstr ""
+
+#: faker-review.php:603
+msgid "Used %s for names and %s for reviews."
+msgstr ""
+
+#: faker-review.php:691
+msgid "Generate Reviews"
+msgstr ""
+
+#: faker-review.php:707
+msgid "Faker Review requires WooCommerce to be installed and active."
+msgstr ""
