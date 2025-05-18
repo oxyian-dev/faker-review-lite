@@ -2,12 +2,7 @@
 /**
  * Plugin Name: Faker Review Lite
  * Plugin URI: https://oxyian.com/
- * Des        <h1><?php echo esc_html__('Faker Review Lite', 'faker-review-lite'); ?></h1>
-        <p><?php echo esc_html__('Generate up to 5 fake reviews for testing purposes.', 'faker-review-lite'); ?></p>
-        
-        <div class="notice notice-info" style="background: #f0f6fc; border-left-color: #2271b1; padding: 20px;">
-            <h3 style="margin-top: 0; color: #2271b1;">
-                <?php echo esc_html__('✨ Unlock Premium Features!', 'faker-review-lite'); ?></h3>on: Generate simple fake reviews for WooCommerce products for testing purposes (up to 5 reviews per product, unverified only)
+ * Description: Generate simple fake reviews for WooCommerce products for testing purposes (up to 5 reviews per product, unverified only)
  * Version: 1.1
  * Author: OXYIAN
  * Author URI: https://oxyian.com/
@@ -92,12 +87,12 @@ function faker_review_lite_admin_page()
 
     ?>
     <div class="wrap">
-        <h1><?php echo esc_html__('Faker Review Lite', 'faker-review'); ?></h1>
-        <p><?php echo esc_html__('Generate up to 5 fake reviews for testing purposes.', 'faker-review'); ?></p>
+        <h1><?php echo esc_html__('Faker Review Lite', 'faker-review-lite'); ?></h1>
+        <p><?php echo esc_html__('Generate up to 5 fake reviews for testing purposes.', 'faker-review-lite'); ?></p>
 
         <div class="notice notice-info" style="background: #f0f6fc; border-left-color: #2271b1; padding: 20px;">
             <h3 style="margin-top: 0; color: #2271b1;">
-                <?php echo esc_html__('✨ Unlock Premium Features!', 'faker-review'); ?>
+                <?php echo esc_html__('✨ Unlock Premium Features!', 'faker-review-lite'); ?>
             </h3>
 
             <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin: 20px 0;">
@@ -116,36 +111,36 @@ function faker_review_lite_admin_page()
                 <div>
                     <h4 style="margin: 0; color: #1d2327;">
                         <span style="color: #2271b1;">🎯</span>
-                        <?php echo esc_html__('Advanced Targeting', 'faker-review'); ?>
+                        <?php echo esc_html__('Advanced Targeting', 'faker-review-lite'); ?>
                     </h4>
                     <ul style="margin: 10px 0;">
-                        <li><?php echo esc_html__('Category-based product selection', 'faker-review'); ?></li>
-                        <li><?php echo esc_html__('Custom date range for reviews', 'faker-review'); ?></li>
-                        <li><?php echo esc_html__('Bulk generation across categories', 'faker-review'); ?></li>
+                        <li><?php echo esc_html__('Category-based product selection', 'faker-review-lite'); ?></li>
+                        <li><?php echo esc_html__('Custom date range for reviews', 'faker-review-lite'); ?></li>
+                        <li><?php echo esc_html__('Bulk generation across categories', 'faker-review-lite'); ?></li>
                     </ul>
                 </div>
 
                 <div>
                     <h4 style="margin: 0; color: #1d2327;">
                         <span style="color: #2271b1;">📝</span>
-                        <?php echo esc_html__('Content Customization', 'faker-review'); ?>
+                        <?php echo esc_html__('Content Customization', 'faker-review-lite'); ?>
                     </h4>
                     <ul style="margin: 10px 0;">
-                        <li><?php echo esc_html__('Upload custom review templates', 'faker-review'); ?></li>
-                        <li><?php echo esc_html__('Custom reviewer names and emails', 'faker-review'); ?></li>
-                        <li><?php echo esc_html__('Advanced text formatting options', 'faker-review'); ?></li>
+                        <li><?php echo esc_html__('Upload custom review templates', 'faker-review-lite'); ?></li>
+                        <li><?php echo esc_html__('Custom reviewer names and emails', 'faker-review-lite'); ?></li>
+                        <li><?php echo esc_html__('Advanced text formatting options', 'faker-review-lite'); ?></li>
                     </ul>
                 </div>
 
                 <div>
                     <h4 style="margin: 0; color: #1d2327;">
                         <span style="color: #2271b1;">⚙️</span>
-                        <?php echo esc_html__('Professional Tools', 'faker-review'); ?>
+                        <?php echo esc_html__('Professional Tools', 'faker-review-lite'); ?>
                     </h4>
                     <ul style="margin: 10px 0;">
-                        <li><?php echo esc_html__('Batch processing for large stores', 'faker-review'); ?></li>
-                        <li><?php echo esc_html__('Review export/import features', 'faker-review'); ?></li>
-                        <li><?php echo esc_html__('Advanced scheduling options', 'faker-review'); ?></li>
+                        <li><?php echo esc_html__('Batch processing for large stores', 'faker-review-lite'); ?></li>
+                        <li><?php echo esc_html__('Review export/import features', 'faker-review-lite'); ?></li>
+                        <li><?php echo esc_html__('Advanced scheduling options', 'faker-review-lite'); ?></li>
                     </ul>
                 </div>
             </div>
