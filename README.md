@@ -1,6 +1,6 @@
 # WooCommerce Products Faker Review Lite
 
-![Faker Review Lite Logo](faker-review-logo.png)
+![Faker Review Lite Logo](img/faker-review-logo.png)
 
 ## Overview
 
@@ -16,13 +16,34 @@ Faker Review Lite is a simple WordPress plugin designed to generate realistic fa
 - Simple and intuitive interface
 
 ### Premium Features ✨
-- Generate up to 500 reviews per product
-- Custom rating distribution
-- Set date ranges for reviews
-- Select products by category
-- Mixed verified/unverified reviews
-- Custom review text and names upload
-- Advanced review settings
+
+#### Bulk Review Generation
+![Bulk Review Generation](img/bulk-reviews.png)
+*Generate up to 500 reviews per product with a single click*
+
+#### Custom Rating Distribution
+![Rating Distribution](img/rating-distribution.png)
+*Set your preferred rating distribution from 1-5 stars*
+
+#### Date Range Configuration
+![Date Settings](img/date-settings.png)
+*Configure custom date ranges for your reviews*
+
+#### Category-based Selection
+![Category Selection](img/category-select.png)
+*Select products by category for targeted review generation*
+
+#### Mixed Review Types
+![Review Types](img/review-types.png)
+*Create a mix of verified and unverified reviews*
+
+#### Custom Content Upload
+![Custom Content](img/custom-content.png)
+*Upload your own review text and reviewer names*
+
+#### Advanced Settings
+![Advanced Settings](img/advanced-settings.png)
+*Fine-tune every aspect of your generated reviews*
 
 ## Installation
 
