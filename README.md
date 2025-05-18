@@ -1,4 +1,4 @@
-# Faker Review Lite
+# WooCommerce Products Faker Review Lite
 
 ## Overview
 
