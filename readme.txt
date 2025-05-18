@@ -8,17 +8,17 @@ Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Generate simple fake reviews for WooCommerce products for testing purposes (up to 15 reviews per product).
+Generate simple fake reviews for WooCommerce products for testing purposes (up to 5 reviews per product, unverified only).
 
 == Description ==
 
 Faker Review Lite is a simple tool designed to generate realistic fake reviews for WooCommerce products. Perfect for development and testing environments, this plugin helps developers and store owners quickly add sample reviews to their products.
 
 = Free Features =
-* Generate up to 15 reviews per product
-* Select specific products for reviews
-* Set verified/unverified purchase status
-* Default balanced rating distribution
+* Generate up to 5 reviews per product
+* Select up to 2 products at a time
+* Unverified reviews only
+* Balanced rating distribution (3-5 stars)
 * Simple and intuitive interface
 
 = Premium Features =
