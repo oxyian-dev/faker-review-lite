@@ -50,7 +50,7 @@ Faker Review Lite is a simple WordPress plugin designed to generate realistic fa
 1. Upload the plugin files to `/wp-content/plugins/faker-review-lite/` directory
 2. Activate the plugin through the 'Plugins' screen in WordPress
 3. Ensure WooCommerce is installed and activated
-4. Navigate to Tools > Faker Review to start using the plugin
+4. Navigate to <mark> Tools > Faker Review</mark> to start using the plugin
 
 ### System Requirements
 
