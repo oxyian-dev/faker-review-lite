@@ -1,4 +1,4 @@
-# WordPress WooCommerce Products Faker Review Lite
+# WordPress WooCommerce Products Faker Review <sup>(Lite)</sup>
 
 ![Faker Review Lite Logo](img/faker-review-logo.png)
 
