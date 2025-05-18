@@ -80,7 +80,7 @@ function faker_review_lite_admin_page() {
     ?>
     <div class="wrap">
         <h1><?php echo esc_html__('Faker Review Lite', 'faker-review'); ?></h1>
-        <p><?php echo esc_html__('Generate up to 15 fake reviews for testing purposes.', 'faker-review'); ?></p>
+        <p><?php echo esc_html__('Generate up to 5 fake reviews for testing purposes.', 'faker-review'); ?></p>
         
         <div class="notice notice-info">
             <p><?php echo esc_html__('Need more features? Try our Premium version with:', 'faker-review'); ?></p>
@@ -116,26 +116,19 @@ function faker_review_lite_admin_page() {
                 <tr>
                     <th scope="row"><?php echo esc_html__('Reviews per Product', 'faker-review'); ?></th>
                     <td>
-                        <input type="number" name="reviews_count" min="1" max="15" value="5" required>
+                        <input type="number" name="reviews_count" min="1" max="5" value="5" required>
                         <p class="description">
-                            <?php echo esc_html__('Maximum 15 reviews per product in Lite version', 'faker-review'); ?>
+                            <?php echo esc_html__('Maximum 5 reviews per product in Lite version', 'faker-review'); ?>
                         </p>
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row"><?php echo esc_html__('Verified Purchase', 'faker-review'); ?></th>
+                    <th scope="row"><?php echo esc_html__('Review Status', 'faker-review'); ?></th>
                     <td>
-                        <select name="verified_status">
-                            <option value="all">
-                                <?php echo esc_html__('Mix of Verified and Unverified', 'faker-review'); ?>
-                            </option>
-                            <option value="verified">
-                                <?php echo esc_html__('All Verified', 'faker-review'); ?>
-                            </option>
-                            <option value="unverified">
-                                <?php echo esc_html__('All Unverified', 'faker-review'); ?>
-                            </option>
-                        </select>
+                        <p class="description">
+                            <?php echo esc_html__('All reviews will be unverified in Lite version', 'faker-review'); ?>
+                        </p>
+                        <input type="hidden" name="verified_status" value="unverified">
                     </td>
                 </tr>
             </table>
@@ -157,8 +150,8 @@ function faker_review_lite_generate_reviews($data) {
     }
 
     $products = isset($data['products']) ? (array)$data['products'] : [];
-    $count = isset($data['reviews_count']) ? min((int)$data['reviews_count'], 15) : 5;
-    $verified_status = isset($data['verified_status']) ? $data['verified_status'] : 'all';
+    $count = isset($data['reviews_count']) ? min((int)$data['reviews_count'], 5) : 5;
+    $verified_status = 'unverified'; // Force unverified reviews only
 
     if (empty($products)) {
         add_settings_error(
