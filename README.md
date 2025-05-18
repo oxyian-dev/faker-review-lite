@@ -8,7 +8,7 @@ Faker Review Lite is a simple WordPress plugin designed to generate realistic fa
 
 ## Features
 
-### Free Features
+### 🎁 Free Features
 - Generate up to 5 reviews per product
 - Select up to 2 products at a time for reviews
 - Unverified reviews only
