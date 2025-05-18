@@ -24,7 +24,7 @@ Faker Review Lite is a simple WordPress plugin designed to generate realistic fa
 
 ## Installation
 
-1. Upload the plugin files to `/wp-content/plugins/faker-review/` directory
+1. Upload the plugin files to `/wp-content/plugins/faker-review-lite/` directory
 2. Activate the plugin through the 'Plugins' screen in WordPress
 3. Ensure WooCommerce is installed and activated
 4. Navigate to Tools > Faker Review to start using the plugin
@@ -61,7 +61,7 @@ You can customize the star rating distribution. For example:
 
 ## File Structure
 
-- `faker-review.php` - Main plugin file containing core functionality
+- `faker-review-lite.php` - Main plugin file containing core functionality
 - `indian_names.txt` - Default list of Indian names for reviewers
 - `reviews.txt` - Default list of review content templates
 - `languages/` - Translation files for internationalization
