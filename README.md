@@ -1,4 +1,4 @@
-# WooCommerce Products Faker Review Lite
+# WordPress WooCommerce Products Faker Review Lite
 
 ![Faker Review Lite Logo](img/faker-review-logo.png)
 
@@ -17,7 +17,7 @@ Faker Review Lite is a simple WordPress plugin designed to generate realistic fa
 
 ### ✨ Premium Features 
 
-#### Bulk Review Generation ✨ (Available only in the Premium version.)
+#### WooCommerce Bulk Products Review Generation ✨ (Available only in the Premium version.)
 ![Bulk Review Generation](img/products.png)
 *Generate up to 500 reviews per product with a single click*
 
