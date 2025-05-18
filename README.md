@@ -1,5 +1,7 @@
 # WooCommerce Products Faker Review Lite
 
+![Faker Review Lite Logo](faker-review-logo.png)
+
 ## Overview
 
 Faker Review Lite is a simple WordPress plugin designed to generate realistic fake reviews for WooCommerce products. Perfect for development and testing environments, this plugin helps developers and store owners quickly add sample reviews to their products.
