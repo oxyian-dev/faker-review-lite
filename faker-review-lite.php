@@ -82,18 +82,65 @@ function faker_review_lite_admin_page() {
         <h1><?php echo esc_html__('Faker Review Lite', 'faker-review'); ?></h1>
         <p><?php echo esc_html__('Generate up to 5 fake reviews for testing purposes.', 'faker-review'); ?></p>
         
-        <div class="notice notice-info">
-            <p><?php echo esc_html__('Need more features? Try our Premium version with:', 'faker-review'); ?></p>
-            <ul style="list-style-type: disc; margin-left: 2em;">
-                <li><?php echo esc_html__('Up to 500 reviews per product', 'faker-review'); ?></li>
-                <li><?php echo esc_html__('Custom rating distribution', 'faker-review'); ?></li>
-                <li><?php echo esc_html__('Date range selection', 'faker-review'); ?></li>
-                <li><?php echo esc_html__('Category-based selection', 'faker-review'); ?></li>
-                <li><?php echo esc_html__('Advanced settings and more!', 'faker-review'); ?></li>
-            </ul>
-            <p><a href="https://oxyian.com/faker-review-premium" class="button button-primary" target="_blank">
-                <?php echo esc_html__('Upgrade to Premium', 'faker-review'); ?>
-            </a></p>
+        <div class="notice notice-info" style="background: #f0f6fc; border-left-color: #2271b1; padding: 20px;">
+            <h3 style="margin-top: 0; color: #2271b1;">
+                <?php echo esc_html__('✨ Unlock Premium Features!', 'faker-review'); ?>
+            </h3>
+            
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin: 20px 0;">
+                <div>
+                    <h4 style="margin: 0; color: #1d2327;">
+                        <span style="color: #2271b1;">⭐</span> <?php echo esc_html__('Enhanced Review Generation', 'faker-review'); ?>
+                    </h4>
+                    <ul style="margin: 10px 0;">
+                        <li><?php echo esc_html__('Generate up to 500 reviews per product', 'faker-review'); ?></li>
+                        <li><?php echo esc_html__('Custom rating distribution control', 'faker-review'); ?></li>
+                        <li><?php echo esc_html__('Mixed verified/unverified reviews', 'faker-review'); ?></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 style="margin: 0; color: #1d2327;">
+                        <span style="color: #2271b1;">🎯</span> <?php echo esc_html__('Advanced Targeting', 'faker-review'); ?>
+                    </h4>
+                    <ul style="margin: 10px 0;">
+                        <li><?php echo esc_html__('Category-based product selection', 'faker-review'); ?></li>
+                        <li><?php echo esc_html__('Custom date range for reviews', 'faker-review'); ?></li>
+                        <li><?php echo esc_html__('Bulk generation across categories', 'faker-review'); ?></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 style="margin: 0; color: #1d2327;">
+                        <span style="color: #2271b1;">📝</span> <?php echo esc_html__('Content Customization', 'faker-review'); ?>
+                    </h4>
+                    <ul style="margin: 10px 0;">
+                        <li><?php echo esc_html__('Upload custom review templates', 'faker-review'); ?></li>
+                        <li><?php echo esc_html__('Custom reviewer names and emails', 'faker-review'); ?></li>
+                        <li><?php echo esc_html__('Advanced text formatting options', 'faker-review'); ?></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 style="margin: 0; color: #1d2327;">
+                        <span style="color: #2271b1;">⚙️</span> <?php echo esc_html__('Professional Tools', 'faker-review'); ?>
+                    </h4>
+                    <ul style="margin: 10px 0;">
+                        <li><?php echo esc_html__('Batch processing for large stores', 'faker-review'); ?></li>
+                        <li><?php echo esc_html__('Review export/import features', 'faker-review'); ?></li>
+                        <li><?php echo esc_html__('Advanced scheduling options', 'faker-review'); ?></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <p style="font-size: 15px; margin-bottom: 15px;">
+                    <?php echo esc_html__('Take your testing to the next level with our Premium features!', 'faker-review'); ?>
+                </p>
+                <a href="https://oxyian.com/faker-review-premium" class="button button-primary button-hero" target="_blank" style="font-size: 16px; padding: 8px 20px;">
+                    <?php echo esc_html__('🌟 Upgrade to Premium', 'faker-review'); ?>
+                </a>
+            </div>
         </div>
 
         <form method="post" action="">
