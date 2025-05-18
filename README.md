@@ -15,34 +15,34 @@ Faker Review Lite is a simple WordPress plugin designed to generate realistic fa
 - Balanced rating distribution (3-5 stars)
 - Simple and intuitive interface
 
-### Premium Features ✨
+### ✨ Premium Features 
 
-#### Bulk Review Generation
-![Bulk Review Generation](img/bulk-reviews.png)
+#### Bulk Review Generation ✨ (Available only in the Premium version.)
+![Bulk Review Generation](img/products.png)
 *Generate up to 500 reviews per product with a single click*
 
-#### Custom Rating Distribution
+#### Custom Rating Distribution ✨(Available only in the Premium version.)
 ![Rating Distribution](img/rating-distribution.png)
 *Set your preferred rating distribution from 1-5 stars*
 
-#### Date Range Configuration
-![Date Settings](img/date-settings.png)
+#### Date Range Configuration ✨ (Available only in the Premium version.)
+![Date Settings](img/date-range.png)
 *Configure custom date ranges for your reviews*
 
-#### Category-based Selection
+#### Category-based Selection ✨ (Available only in the Premium version.)
 ![Category Selection](img/category-select.png)
 *Select products by category for targeted review generation*
 
-#### Mixed Review Types
-![Review Types](img/review-types.png)
+#### Mixed Review Types ✨ (Available only in the Premium version.)
+![Review Types](img/options.png)
 *Create a mix of verified and unverified reviews*
 
-#### Custom Content Upload
-![Custom Content](img/custom-content.png)
+#### Custom Content Upload ✨ (Available only in the Premium version.)
+![Custom Content](img/content-settings.png)
 *Upload your own review text and reviewer names*
 
-#### Advanced Settings
-![Advanced Settings](img/advanced-settings.png)
+#### Advanced Settings ✨ (Available only in the Premium version.)
+![Advanced Settings](img/product-base.png)
 *Fine-tune every aspect of your generated reviews*
 
 ## Installation
