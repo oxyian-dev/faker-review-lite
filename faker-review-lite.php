@@ -8,7 +8,7 @@
  * Author URI: https://oxyian.com/
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: faker-review
+ * Text Domain: faker-review-lite
  * Domain Path: /languages
  * Requires at least: 5.0
  * Requires PHP: 7.2
@@ -211,18 +211,26 @@ function faker_review_lite_admin_page() {
 function faker_review_lite_generate_reviews($data) {
     if (!isset($data['faker_review_lite_nonce']) || 
         !wp_verify_nonce($data['faker_review_lite_nonce'], 'faker_review_lite_generate')) {
-        wp_die(__('Security check failed', 'faker-review'));
+        add_settings_error(
+            'faker_review_lite',
+            'security_check_failed',
+            __('Security check failed', 'faker-review'),
+            'error'
+        );
+        return;
     }
 
-    $products = isset($data['products']) ? (array)$data['products'] : [];
-    $count = isset($data['reviews_count']) ? min((int)$data['reviews_count'], 5) : 5;
+    $products = isset($data['products']) ? array_map('absint', (array)$data['products']) : [];
+    $count = isset($data['reviews_count']) ? absint($data['reviews_count']) : 5;
+    $count = min($count, 5); // Enforce the 5 review limit
     $verified_status = 'unverified'; // Force unverified reviews only
 
     if (empty($products)) {
         add_settings_error(
             'faker_review_lite',
-            'no-products',
-            __('No products selected. Please select at least one product.', 'faker-review')
+            'no_products',
+            __('No products selected. Please select at least one product.', 'faker-review'),
+            'error'
         );
         return;
     }
