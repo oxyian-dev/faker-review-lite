@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Faker Review Lite
- * Plugin URI: https://oxyian.com/
+ * Plugin URI: https://github.com/oxyian/faker-review-lite
  * Description: Generate simple fake reviews for WooCommerce products for testing purposes (up to 5 reviews per product, unverified only)
  * Version: 1.1
  * Author: OXYIAN
- * Author URI: https://oxyian.com/
+ * Author URI: https://oxyian.com
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: faker-review-lite
