@@ -15,7 +15,7 @@ Faker Review Lite is a simple WordPress plugin designed to generate realistic fa
 - Balanced rating distribution (3-5 stars)
 - Simple and intuitive interface
 
-### ✨ Premium Features 🛒 [Buy Now](https://oxyian.com)
+### ✨ Premium Features 🛒 [Buy Now](https://oxyian.com) Coming Soon...
 
 [![Buy Now](img/buy-now.gif)](https://oxyian.com)
 
