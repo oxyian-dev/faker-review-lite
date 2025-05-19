@@ -75,6 +75,7 @@ function faker_review_lite_admin_page()
     $products = wc_get_products([
         'status' => 'publish',
         'limit' => -1,
+        'return' => 'objects', // Ensure we get product objects
     ]);
 
     if (isset($_POST['generate_reviews'])) {
