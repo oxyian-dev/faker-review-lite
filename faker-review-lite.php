@@ -16,7 +16,7 @@
  */
 
 // If this file is called directly, abort
-if (!defined('WPINC')) {
+if (!defined('ABSPATH')) {
     die;
 }
 
@@ -26,7 +26,7 @@ define('FAKER_REVIEW_LITE_VERSION', '1.1');
 function faker_review_lite_init()
 {
     // Check if WooCommerce is active
-    if (!in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_option('active_plugins')))) {
+    if (!class_exists('WooCommerce')) {
         add_action('admin_notices', 'faker_review_lite_wc_missing_notice');
         return;
     }
@@ -43,7 +43,7 @@ function faker_review_lite_init()
     // Add settings link
     add_filter('plugin_action_links_' . plugin_basename(__FILE__), 'faker_review_lite_add_settings_link');
 }
-add_action('init', 'faker_review_lite_init');
+add_action('plugins_loaded', 'faker_review_lite_init');
 
 // Show notice if WooCommerce is missing
 function faker_review_lite_wc_missing_notice()
@@ -72,25 +72,30 @@ function faker_review_lite_admin_page()
         return;
     }
 
-    $products = wc_get_products([
-        'status' => 'publish',
-        'limit' => -1,
-        'return' => 'objects', // Ensure we get product objects
-    ]);
+    global $wpdb;
+    
+    // Get all published products directly from the database
+    $products = $wpdb->get_results(
+        $wpdb->prepare(
+            "SELECT ID, post_title FROM {$wpdb->posts} WHERE post_type = %s AND post_status = %s",
+            'product',
+            'publish'
+        )
+    );
 
     if (isset($_POST['generate_reviews'])) {
-        check_admin_referer('faker_review_lite_generate', 'faker_review_lite_nonce');
-
-        // Sanitize inputs
-        $products = isset($_POST['products']) ? array_map('absint', (array) $_POST['products']) : [];
-        $reviews_count = isset($_POST['reviews_count']) ? absint($_POST['reviews_count']) : 5;
-
-        // Limit product selection to 2
-        if (count($products) > 2) {
-            $products = array_slice($products, 0, 2);
+        if (!isset($_POST['faker_review_lite_nonce']) || !wp_verify_nonce($_POST['faker_review_lite_nonce'], 'faker_review_lite_generate')) {
+            wp_die(__('Security check failed', 'faker-review-lite'));
         }
 
-        faker_review_lite_generate_reviews($products, $reviews_count);
+        $selected_products = isset($_POST['products']) ? array_map('absint', (array) $_POST['products']) : [];
+        $reviews_count = isset($_POST['reviews_count']) ? min(absint($_POST['reviews_count']), 5) : 5;
+
+        if (count($selected_products) > 2) {
+            $selected_products = array_slice($selected_products, 0, 2);
+        }
+
+        faker_review_lite_generate_reviews($selected_products, $reviews_count);
     }
 
     ?>
@@ -105,11 +110,17 @@ function faker_review_lite_admin_page()
                     <th scope="row"><?php echo esc_html__('Select Products', 'faker-review-lite'); ?></th>
                     <td>
                         <select name="products[]" multiple style="width: 100%; max-width: 400px; height: 200px;">
-                            <?php foreach ($products as $product): ?>
-                                <option value="<?php echo esc_attr($product->get_id()); ?>">
-                                    <?php echo esc_html($product->get_name()); ?>
-                                </option>
-                            <?php endforeach; ?>
+                            <?php 
+                            if ($products) {
+                                foreach ($products as $product) {
+                                    printf(
+                                        '<option value="%d">%s</option>',
+                                        (int)$product->ID,
+                                        htmlspecialchars($product->post_title, ENT_QUOTES, 'UTF-8')
+                                    );
+                                }
+                            }
+                            ?>
                         </select>
                         <p class="description">
                             <?php echo esc_html__('Hold Ctrl/Cmd to select products (maximum 2 products in Lite version)', 'faker-review-lite'); ?>
