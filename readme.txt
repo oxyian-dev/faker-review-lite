@@ -1,4 +1,4 @@
-=== Faker Review Lite ===
+=== Faker Review Lite === 
 Contributors: oxyian
 Tags: woocommerce, reviews, testing, fake reviews, development, dummy data, test data, product reviews
 Requires at least: 5.0
